@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir</h1>
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="hobby">Hobby:</label>
+                <input type="text" id="hobby" name="hobby">
+            </div>
+            <div class="form-group">
+                <label for="pendidikan">Pendidikan:</label>
+                <select id="pendidikan" name="pendidikan">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Sarjana">Sarjana</option>
+                    <option value="Pascasarjana">Pascasarjana</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat"></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Kirim</button>
+                <button type="button" class="btn-cancel">Batal</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
